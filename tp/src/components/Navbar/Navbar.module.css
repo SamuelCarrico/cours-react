@@ -1,0 +1,73 @@
+.navbar {
+    background-color: white;
+    padding: 16px 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    position: relative;
+}
+
+.navLink {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e63946;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.navLink:active {
+    transform: scale(1);
+}
+
+.navLink::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #e63946;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navLink:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.badge {
+    padding: 2px 6px;
+    border-radius: 50%;
+    color: white;
+    background-color: #e63946;
+}

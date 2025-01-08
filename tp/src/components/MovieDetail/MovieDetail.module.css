@@ -1,0 +1,152 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 90vh;
+}
+
+.imageWrapper {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 16px;
+}
+
+.image {
+    width: 100%;
+    height: 50vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.overview {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.releaseDate {
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    color: #e63946;
+}
+
+.star {
+    margin-left: 4px;
+    font-size: 1.2rem;
+}
+
+.actors {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.actorsTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.actorsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.actorItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.actorImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actorName {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.listSimilarMovies {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.listSimilarMovies li {
+    display: inline-block;
+    min-width: 120px;
+}
+
+.similarImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.similarImage:hover {
+    transform: scale(1.05);
+}
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-bottom: 16px;
+}

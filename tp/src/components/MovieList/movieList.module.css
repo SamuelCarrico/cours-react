@@ -1,27 +1,36 @@
-.movie-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8px;
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 24px;
+    list-style: none;
 }
 
-.movie-name {
+@media (max-width: 1024px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.error {
+    color: red;
     font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0.5rem 0;
+    text-align: center;
 }
 
-.movie-year {
-    font-size: 1rem;
-    margin: 0.5rem 0;
+.movie-card {
+    padding: 8px;
+    background-color: red;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.movie-rating {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-}
-
-.movie-desc {
-    font-size: .9rem;
-    margin: 0.5rem 0;
+.movie-card:hover {
+    transform: scale(1.05);
 }
